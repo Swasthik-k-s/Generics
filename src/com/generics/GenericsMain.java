@@ -3,9 +3,9 @@ package com.generics;
 public class GenericsMain {
 
 	public static void main(String[] args) {
-		MaxNumber max1 = new MaxNumber(57f,14f,36f);
-		MaxNumber max2 = new MaxNumber(17f,84f,4f);
-		MaxNumber max3 = new MaxNumber(47f,18f,790f);
+		MaxNumber max1 = new MaxNumber("this","is","a");
+		MaxNumber max2 = new MaxNumber("only","method","for");
+		MaxNumber max3 = new MaxNumber("genric","maximum","problem");
 		
 		max1.findMax();
 		max2.findMax();
