@@ -3,13 +3,16 @@ package com.generics;
 public class GenericsMain {
 
 	public static void main(String[] args) {
-		MaxNumber max1 = new MaxNumber("this","is","a");
-		MaxNumber max2 = new MaxNumber("only","method","for");
-		MaxNumber max3 = new MaxNumber("genric","maximum","problem");
 		
-		max1.findMax();
-		max2.findMax();
-		max3.findMax();
+		//Creating 3 objects to find the maximum for Integer, Float and String
+		MaxNumber max1 = new MaxNumber();
+		MaxNumber max2 = new MaxNumber();
+		MaxNumber max3 = new MaxNumber();
+		
+		//Calling findMax method the find the maximum value
+		max1.findMax(20,523,82);
+		max2.findMax(93f,43.9f,23f);
+		max3.findMax("genric","maximum","problem");
 	}
 
 }
