@@ -12,6 +12,12 @@ public class MaxNumber<T extends Comparable<T>> {
 			array.add(item);
 		}
 		array.sort(null);
-		System.out.println("Maximum = " + array.get(array.size()-1));
+		
+		T max = array.get(array.size()-1);
+		printMax(max);
+	}
+	
+	public <T> void printMax(T max) {
+		System.out.println("Maximum = " + max);
 	}
 }
